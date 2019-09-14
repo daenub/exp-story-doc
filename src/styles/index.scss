@@ -1,5 +1,12 @@
-@import 'reset';
-@import 'variables';
+$breakpoints: (
+  small: 0em,
+  medium: (640 / 16) * 1em,
+  large: (1024 / 16) * 1em
+);
 
+@import 'reset';
+@import 'mixins';
+
+@import 'typography';
 @import 'general';
 @import 'header';
