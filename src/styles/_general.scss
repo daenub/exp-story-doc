@@ -1,0 +1,30 @@
+/* General */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+
+/* Content */
+
+.content {
+  max-width: 640px;
+  margin: 3rem auto 0;
+}

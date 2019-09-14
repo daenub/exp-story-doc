@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Mono:400,700&display=swap" rel="stylesheet">
-  <title>Experimentelles Erzählen</title>
 </head>
+
 <body>
   <header class="header">
     <h1 class="header__title">
@@ -19,11 +22,11 @@
     <h2>7. September 2019</h2>
 
     <h2>Startschuss zur Projektarbeit</h2>
-    <img src="./images/ideen_boerse.jpg" alt="Ideen auf Blätter geschrieben und an eine Wand geklebt." />
+    <img src="<%=require('./images/ideen_boerse.jpg')%>" alt="Ideen auf Blätter geschrieben und an eine Wand geklebt." />
 
     <h3>Kay & Kevin</h3>
 
-    <img src="./images/newspaper_story.jpg" alt="Foto eines Zeitungsartikels über die Geschichte von zwei vergessenen Kinder in einem Zug." />
+    <img src="<%=require('./images/newspaper_story.jpg')%>" alt="Foto eines Zeitungsartikels über die Geschichte von zwei vergessenen Kinder in einem Zug." />
 
     <ul>
       <li>Hauptfigur / Strategie</li>
@@ -35,7 +38,7 @@
       <li>Gegner / Hürden / Hinternisse</li>
     </ul>
 
-    <img src="./images/kay_and_kevin.jpg" alt="Mockup Bild von &laquo;Kay &amp; Kevin&raquo;" />
+    <img src="<%=require('./images/kay_and_kevin.jpg')%>" alt="Mockup Bild von &laquo;Kay &amp; Kevin&raquo;" />
 
     <dl>
       <div>
@@ -101,7 +104,7 @@
 
     <h2>24. August 2019</h2>
     <h3>Unsere Story</h3>
-    <img src="./images/our_story.jpg" alt="" />
+    <img src="<%=require('./images/our_story.jpg')%>" alt="" />
     <p>
       Sam ist gut gelaunt.<br />
       Er wird zu unrecht zu einer lebenslangen Haftstrafe verurteilt.<br />
@@ -113,7 +116,7 @@
     </p>
 
     <h3>Story 1:</h3>
-    <img src="./images/story_1.jpg" alt="" />
+    <img src="<%=require('./images/story_1.jpg')%>" alt="" />
     <p>
       Jemand findet keinen Parkplatz<br />
       Hat nicht mehr viel Zeit, es ist bereits 11 Uhr.<br />
@@ -130,24 +133,24 @@
     </p>
 
     <h3>Story 2:</h3>
-    <img src="./images/story_2.jpg" alt="" />
+    <img src="<%=require('./images/story_2.jpg')%>" alt="" />
     <p>
-      Die Särge werden angeliefert
-      Diese sind aber zu spät
-      Der UPS-Man geht zum Lift
-      und fährt in den 4. Stock
-      Dort rennt er
-      richtung Notausgang
-      Läuft durch die Hintertür
-      Als er die zweite Tür öffnen möchte
-      gibt es eine grosse Explosion
-      Das ganze Haus stürzt zusammen
-      Nicht einmal die vier Hauptsäulen halten stand.
-      Der UPS Man kam mit einer verlorener Hand davon und trägt jetzt eine Protese.
-      Ein paar Jahre später Kam er aber nicht damit klar und hat sich dann erhängt.
+      Die Särge werden angeliefert<br />
+      Diese sind aber zu spät<br />
+      Der UPS-Man geht zum Lift<br />
+      und fährt in den 4. Stock<br />
+      Dort rennt er<br />
+      richtung Notausgang<br />
+      Läuft durch die Hintertür<br />
+      Als er die zweite Tür öffnen möchte<br />
+      gibt es eine grosse Explosion<br />
+      Das ganze Haus stürzt zusammen<br />
+      Nicht einmal die vier Hauptsäulen halten stand.<br />
+      Der UPS Man kam mit einer verlorener Hand davon und trägt jetzt eine Protese.<br />
+      Ein paar Jahre später Kam er aber nicht damit klar und hat sich dann erhängt.<br />
       Die Moral der Geschicht, öffne die falsche Türe nicht. #rhymes
     </p>
   </main>
-  <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
