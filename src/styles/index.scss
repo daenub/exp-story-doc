@@ -4,6 +4,9 @@ $breakpoints: (
   large: (1024 / 16) * 1em
 );
 
+$block-margin: 1.5rem;
+$richtext-margin: 1.5rem;
+
 @import 'reset';
 @import 'mixins';
 

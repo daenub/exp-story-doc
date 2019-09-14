@@ -1,11 +1,18 @@
+
 /* General */
 
 img {
   max-width: 100%;
+  margin-bottom: $richtext-margin;
 }
 
 p {
   margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1.25em;
+  margin-bottom: $richtext-margin;
 }
 
 
