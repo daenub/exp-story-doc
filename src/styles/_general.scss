@@ -24,6 +24,28 @@ dd {
   margin-bottom: $block-margin;
 }
 
+a {
+  color: $black;
+  text-decoration: none;
+
+  position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $black;
+  }
+}
+
 
 /* Content */
 
