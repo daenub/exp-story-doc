@@ -15,6 +15,15 @@ ul {
   margin-bottom: $richtext-margin;
 }
 
+dt {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+dd {
+  margin-bottom: $block-margin;
+}
+
 
 /* Content */
 
