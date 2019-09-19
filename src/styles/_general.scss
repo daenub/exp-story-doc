@@ -3,11 +3,11 @@
 
 img {
   max-width: 100%;
-  margin-bottom: $richtext-margin;
+  margin-bottom: $block-margin;
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: $richtext-margin;
 }
 
 ul {
