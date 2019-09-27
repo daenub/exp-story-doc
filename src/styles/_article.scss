@@ -3,10 +3,34 @@
 
   &::after {
     content: '';
+    display: block;
+    height: .75rem;
+    width: 3.75rem;
+    background-color: #000;
+    margin: $block-margin * 2 auto;
+    transform: skewX(-23deg);
   }
 }
 
 .article > .image {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+}
+
+.article__title time {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    display: block;
+    content: '';
+
+    position: absolute;
+    bottom: -.25em;
+    left: 0;
+
+    width: 100%;
+    height: .125em;
+    background-color: $black;
+  }
 }
