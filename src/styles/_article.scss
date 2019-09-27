@@ -4,9 +4,9 @@
   &::after {
     content: '';
     display: block;
-    height: .75rem;
-    width: 3.75rem;
-    background-color: #000;
+    height: .5rem;
+    width: 2.5rem;
+    background-color: lighten($black, 10%);
     margin: $block-margin * 2 auto;
     transform: skewX(-23deg);
   }
