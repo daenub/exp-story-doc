@@ -3,6 +3,10 @@
 
 img {
   max-width: 100%;
+}
+
+.image {
+  margin-top: $block-margin;
   margin-bottom: $block-margin;
 }
 
@@ -16,6 +20,7 @@ ul {
 }
 
 dt {
+  font-family: $font-family-heading;
   font-weight: bold;
   margin-bottom: .5rem;
 }
@@ -52,4 +57,5 @@ a {
 .content {
   max-width: 640px;
   margin: 3rem auto 0;
+  padding: 0 1.5rem;
 }

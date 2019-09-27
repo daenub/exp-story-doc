@@ -1,0 +1,12 @@
+.article {
+  position: relative;
+
+  &::after {
+    content: '';
+  }
+}
+
+.article > .image {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
