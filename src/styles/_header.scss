@@ -38,6 +38,7 @@
 
 .header__stripe {
   $bg-start-color: transparentize($white, 0.5);
+  transform-origin: center center;
 
   &:nth-child(1) {
     grid-column: 1 / 3;

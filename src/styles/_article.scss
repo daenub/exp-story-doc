@@ -6,20 +6,21 @@
     display: block;
     height: .5rem;
     width: 2.5rem;
-    background-color: lighten($black, 10%);
+    background-color: #FF8A95;
     margin: $block-margin * 2 auto;
     transform: skewX(-23deg);
   }
-}
 
-.article > .image {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  > .image {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
 }
 
 .article__title time {
   position: relative;
   display: inline-block;
+  margin-bottom: $richtext-margin;
 
   &::after {
     display: block;

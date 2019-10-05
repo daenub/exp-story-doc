@@ -32,30 +32,23 @@ dd {
 a {
   color: $black;
   text-decoration: none;
+  border-bottom: 1px solid $black;
 
   position: relative;
 
   &:hover {
     opacity: 0.7;
   }
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background-color: $black;
-  }
 }
 
 
 /* Content */
 
+$content-max-width: (640 / 16) * 1rem;
+
 .content {
-  max-width: 640px;
-  margin: 3rem auto 0;
-  padding: 0 1.5rem;
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
 }
