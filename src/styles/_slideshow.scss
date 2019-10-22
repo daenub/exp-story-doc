@@ -1,0 +1,13 @@
+.slideshow {
+
+}
+
+.slideshow__image {
+  overflow: hidden;
+  border: 2px solid black;
+
+  img {
+    display: block;
+    transition: transform .25s ease;
+  }
+}
