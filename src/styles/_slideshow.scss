@@ -3,11 +3,42 @@
 }
 
 .slideshow__image {
+  position: relative;
   overflow: hidden;
   border: 2px solid black;
 
   img {
     display: block;
-    transition: transform .25s ease;
+    transition: all .25s ease;
   }
+}
+
+.debug {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.debug--1 {
+  top: 0;
+  left: 0;
+  background-color: transparentize(#00ff00, 0.8);
+}
+
+.debug--2 {
+  top: 0;
+  right: 0;
+  background-color: transparentize(#00ffff, 0.8);
+}
+
+.debug--3 {
+  bottom: 0;
+  right: 0;
+  background-color: transparentize(#ff0000, 0.8);
+}
+
+.debug--4 {
+  bottom: 0;
+  left: 0;
+  background-color: transparentize(#ffff00, 0.8);
 }
