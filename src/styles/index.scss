@@ -1,19 +1,20 @@
+// prettier-ignore
 $breakpoints: (
   small: 0em,
   medium: (640 / 16) * 1em,
-  large: (1024 / 16) * 1em
+  large: (1024 / 16) * 1em,
 );
 
 $block-margin: 2rem;
 $richtext-margin: 1.5rem;
 
-@import 'reset';
-@import 'mixins';
-@import 'colors';
+@import "reset";
+@import "mixins";
+@import "colors";
 
-@import 'typography';
-@import 'general';
-@import 'header';
-@import 'edupad';
-@import 'article';
-@import 'slideshow';
+@import "typography";
+@import "general";
+@import "header";
+@import "edupad";
+@import "article";
+@import "slideshow";

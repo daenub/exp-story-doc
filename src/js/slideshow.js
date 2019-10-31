@@ -15,12 +15,14 @@ const parseCoordinates = coordString => {
   }
 }
 
-
 class Slideshow {
   constructor(el) {
     this.el = el
     this.viewBox = parseCoordinates(el.dataset.slideshow)
-    this.slides = $$("[data-slide]", this.el).map(el => ({el, ...parseCoordinates(el.dataset.slide)}))
+    this.slides = $$("[data-slide]", this.el).map(el => ({
+      el,
+      ...parseCoordinates(el.dataset.slide),
+    }))
     this.canvas = $("[data-canvas]", this.el)
     this.image = $("[data-image]", this.el)
     this.button = $("[data-control]", this.el)
@@ -30,7 +32,7 @@ class Slideshow {
     this.init()
   }
 
-  init () {
+  init() {
     this.button.addEventListener("click", e => {
       e.preventDefault()
       this.nextSlide()
@@ -69,7 +71,7 @@ class Slideshow {
 
     return {
       x: map(x, 0, this.viewBox.x, 0, canvasRect.width),
-      y: map(y, 0, this.viewBox.y, 0, canvasRect.height)
+      y: map(y, 0, this.viewBox.y, 0, canvasRect.height),
     }
   }
 
@@ -77,8 +79,8 @@ class Slideshow {
     const canvasRect = this.canvas.getBoundingClientRect()
 
     return {
-      x: (canvasRect.width / 2) - x,
-      y: (canvasRect.height / 2) - y,
+      x: canvasRect.width / 2 - x,
+      y: canvasRect.height / 2 - y,
     }
   }
 

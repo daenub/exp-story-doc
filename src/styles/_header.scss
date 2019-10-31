@@ -27,7 +27,7 @@
 
 .header__stripes {
   display: grid;
-  grid: repeat(4,200px) / repeat(10,1fr);
+  grid: repeat(4, 200px) / repeat(10, 1fr);
   position: absolute;
   top: 0;
   width: 100%;
