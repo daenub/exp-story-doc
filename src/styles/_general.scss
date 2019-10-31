@@ -7,6 +7,55 @@ img {
 .image {
   margin-top: $block-margin;
   margin-bottom: $block-margin;
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+}
+
+.image__wrapper {
+  position: relative;
+  margin-right: 1rem;
+
+  img {
+    display: block;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $grey;
+    z-index: -1;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  @include breakpoint(medium) {
+    width: 70%;
+  }
+}
+
+.image__caption {
+  margin-right: 1rem;
+  align-self: flex-start;
+
+  font-size: $font-size-small;
+  background-color: $shakespeare;
+  color: $white;
+  padding: 1rem 1rem 1.25rem 1rem;
+
+  transform: translate(0.5rem, -1rem);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(medium) {
+    width: 30%;
+    transform: translate(-2rem, 1rem);
+  }
 }
 
 p {

@@ -6,14 +6,14 @@
     display: block;
     height: 0.5rem;
     width: 2.5rem;
-    background-color: #ff8a95;
+    background-color: $pink-salmon;
     margin: $block-margin * 2 auto;
     transform: skewX(-23deg);
   }
 
   > .image {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    //margin-left: -1.5rem;
+    //margin-right: -1.5rem;
   }
 }
 
