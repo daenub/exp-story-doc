@@ -55,7 +55,7 @@ module.exports = {
      * Generates an HTML file from a template.
      */
     new HtmlWebpackPlugin({
-      title: 'Experimentelles Erzählen',
+      title: 'Experimentelles Erzählen – IAD2019 – Dan Büschlen',
       // favicon: paths.src + '/images/favicon.png', // TODO: define favicon
       template: paths.src + '/index.html', // template file
       filename: 'index.html', // output file

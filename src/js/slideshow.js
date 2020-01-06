@@ -33,6 +33,8 @@ class Slideshow {
   }
 
   init() {
+    this.setStatus("INIT")
+
     this.button.addEventListener("click", e => {
       e.preventDefault()
       this.nextSlide()
@@ -56,10 +58,23 @@ class Slideshow {
   }
 
   revealSlide(index = null) {
+    this.slides[this.currentSlide].el.dataset.active = false
+
     if (index !== null) {
-      this.currentSlide = index
+      if (this.slides.length <= index) {
+        this.setStatus("ended")
+        return
+      } else {
+        this.currentSlide = index
+      }
     }
+
+    if (this.currentSlide === 0) {
+      this.setStatus("started")
+    }
+
     this.applyTransform(this.slides[this.currentSlide])
+    this.slides[this.currentSlide].el.dataset.active = true
   }
 
   nextSlide() {
@@ -90,5 +105,10 @@ class Slideshow {
 
     this.image.style.transform = `translate(${centeredCords.x}px, ${centeredCords.y}px) scale(2.5)`
     this.image.style.transformOrigin = `${scaledCoords.x}px ${scaledCoords.y}px`
+  }
+
+  setStatus(status) {
+    this.el.dataset.status = status
+    this.status = status
   }
 }

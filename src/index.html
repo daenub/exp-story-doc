@@ -31,12 +31,27 @@
   </header>
   <main class="content">
     <article class="article">
+      <h2 class="article__title"><time>9.&#8239;November 2019</time></h2>
+      <h3>Präsentation und Abschluss</h3>
+    </article>
+    <article class="article">
+      <h2 class="article__title"><time>2.&#8239;November 2019</time></h2>
+      <h3>Abschluss des Projektes &amp; Testlauf der Präsentation</h3>
+    </article>
+    <article class="article">
+      <h2 class="article__title"><time>26.&#8239;Oktober 2019</time></h2>
+      <h3>Storyboarding</h3>
+    </article>
+    <article class="article">
       <h2 class="article__title"><time>5.&#8239;Oktober 2019</time></h2>
       <h3>Herbie Hancock etc</h3>
     </article>
     <article class="article">
       <h2 class="article__title"><time>28.&#8239;September 2019</time></h2>
       <h3>Dramaturgie</h3>
+      <p>
+        Heute haben wir wieder etwas 
+      </p>
     </article>
     <article class="article">
       <h2 class="article__title"><time>21.&#8239;September 2019</time></h2>
@@ -267,15 +282,15 @@
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/our_story.jpg')%>" alt="" />
         </div>
-        <button data-control>Next</button>
-        <p>
-          <span data-slide="788x792">Sam ist gut gelaunt.</span><br />
-          <span data-slide="1833x779">Er wird zu unrecht zu einer lebenslangen Haftstrafe verurteilt.</span><br />
-          <span data-slide="2882x768">Seine Zelle befindet sich im Hochsicherheitstrakt im Untergeschoss.</span><br />
-          <span data-slide="3944x764">In seiner Zelle angekommen, werden Sam die Handschellen durch die Luke in der Türe abgenommen.</span><br />
-          <span data-slide="805x2173">Er begibt sich zur Toilette.</span><br />
-          <span data-slide="1835x2171">Als er dabei nach oben blickt, sieht er einen Haken.</span><br />
-          <span data-slide="2880x2162">Mit den Schnürsenkel seiner Schuhe erhängt er sich.</span><br />
+        <button class="slideshow__next" data-control></button>
+        <p class="slideshow__text-wrapper">
+          <span class="slideshow__text" data-slide="788x792">Sam ist gut gelaunt.</span>
+          <span class="slideshow__text" data-slide="1833x779">Er wird zu unrecht zu einer lebenslangen Haftstrafe verurteilt.</span>
+          <span class="slideshow__text" data-slide="2882x768">Seine Zelle befindet sich im Hochsicherheitstrakt im Untergeschoss.</span>
+          <span class="slideshow__text" data-slide="3944x764">In seiner Zelle angekommen, werden Sam die Handschellen durch die Luke in der Türe abgenommen.</span>
+          <span class="slideshow__text" data-slide="805x2173">Er begibt sich zur Toilette.</span>
+          <span class="slideshow__text" data-slide="1835x2171">Als er dabei nach oben blickt, sieht er einen Haken.</span>
+          <span class="slideshow__text" data-slide="2880x2162">Mit den Schnürsenkel seiner Schuhe erhängt er sich.</span>
         </p>
       </div>
 
@@ -284,7 +299,7 @@
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/story_1.jpg')%>" alt="" />
         </div>
-        <button data-control>Next</button>
+        <button class="slideshow__next" data-control>Next</button>
         <p>
           Jemand findet keinen Parkplatz<br />
           Hat nicht mehr viel Zeit, es ist bereits 11 Uhr.<br />
@@ -306,7 +321,7 @@
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/story_2.jpg')%>" alt="" />
         </div>
-        <button data-control>Next</button>
+        <button class="slideshow__next" data-control>Next</button>
         <p>
           Die Särge werden angeliefert<br />
           Diese sind aber zu spät<br />
