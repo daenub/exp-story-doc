@@ -25,7 +25,11 @@ class Slideshow {
     }))
     this.canvas = $("[data-canvas]", this.el)
     this.image = $("[data-image]", this.el)
-    this.button = $("[data-control]", this.el)
+
+    this.prevButton = $("[data-prev]", this.el)
+    this.nextButton = $("[data-next]", this.el)
+
+    console.log(this.el, this.prevButton, this.nextButton)
 
     this.currentSlide = 0
 
@@ -35,9 +39,14 @@ class Slideshow {
   init() {
     this.setStatus("INIT")
 
-    this.button.addEventListener("click", e => {
+    this.nextButton.addEventListener("click", e => {
       e.preventDefault()
-      this.nextSlide()
+      this.revealSlide(this.currentSlide + 1)
+    })
+
+    this.prevButton.addEventListener("click", e => {
+      e.preventDefault()
+      this.revealSlide(this.currentSlide - 1)
     })
 
     if (this.slides.length) {
@@ -75,10 +84,7 @@ class Slideshow {
 
     this.applyTransform(this.slides[this.currentSlide])
     this.slides[this.currentSlide].el.dataset.active = true
-  }
-
-  nextSlide() {
-    this.revealSlide(this.currentSlide + 1)
+    this.updateControls()
   }
 
   mapCoordsToCurrentSize({x, y}) {
@@ -103,12 +109,17 @@ class Slideshow {
     const scaledCoords = this.mapCoordsToCurrentSize(coords)
     const centeredCords = this.getCenterPosition(scaledCoords)
 
-    this.image.style.transform = `translate(${centeredCords.x}px, ${centeredCords.y}px) scale(2.5)`
+    this.image.style.transform = `translate(${centeredCords.x}px, ${centeredCords.y}px) scale(3)`
     this.image.style.transformOrigin = `${scaledCoords.x}px ${scaledCoords.y}px`
   }
 
   setStatus(status) {
     this.el.dataset.status = status
     this.status = status
+  }
+
+  updateControls() {
+    this.prevButton.hidden = this.currentSlide === 0
+    this.nextButton.hidden = this.currentSlide === this.slides.length - 1
   }
 }

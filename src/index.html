@@ -282,61 +282,60 @@
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/our_story.jpg')%>" alt="" />
         </div>
-        <button class="slideshow__next" data-control></button>
-        <p class="slideshow__text-wrapper">
-          <span class="slideshow__text" data-slide="788x792">Sam ist gut gelaunt.</span>
-          <span class="slideshow__text" data-slide="1833x779">Er wird zu unrecht zu einer lebenslangen Haftstrafe verurteilt.</span>
-          <span class="slideshow__text" data-slide="2882x768">Seine Zelle befindet sich im Hochsicherheitstrakt im Untergeschoss.</span>
-          <span class="slideshow__text" data-slide="3944x764">In seiner Zelle angekommen, werden Sam die Handschellen durch die Luke in der Türe abgenommen.</span>
-          <span class="slideshow__text" data-slide="805x2173">Er begibt sich zur Toilette.</span>
-          <span class="slideshow__text" data-slide="1835x2171">Als er dabei nach oben blickt, sieht er einen Haken.</span>
-          <span class="slideshow__text" data-slide="2880x2162">Mit den Schnürsenkel seiner Schuhe erhängt er sich.</span>
-        </p>
+        <button class="slideshow__control slideshow__control--prev" data-prev title="Letztes Bild"></button>
+        <button class="slideshow__control slideshow__control--next" data-next title="Nächstes Bild"></button>
+        <span class="slideshow__text" data-slide="895x900">Sam ist gut gelaunt.</span> <!-- 788x792 -->
+        <span class="slideshow__text" data-slide="1944x900">Er wird zu unrecht zu einer lebenslangen Haftstrafe verurteilt.</span> <!-- 1833x779 -->
+        <span class="slideshow__text" data-slide="2994x890">Seine Zelle befindet sich im Hochsicherheitstrakt im Untergeschoss.</span> <!-- 2882x768 -->
+        <span class="slideshow__text" data-slide="4063x881">In seiner Zelle angekommen, werden Sam die Handschellen durch die Luke in der Türe  abgenommen.</span><!-- 3944x764 -->
+        <span class="slideshow__text" data-slide="911x2283">Er begibt sich zur Toilette.</span> <!-- 805x2173 -->
+        <span class="slideshow__text" data-slide="1954x2278">Als er dabei nach oben blickt, sieht er einen Haken.</span> <!-- 1835x2171 -->
+        <span class="slideshow__text" data-slide="3001x2271">Mit den Schnürsenkel seiner Schuhe erhängt er sich.</span> <!-- 2880x2162 -->
       </div>
 
       <h3>Story 1:</h3>
-      <div data-slideshow>
+      <div class="slideshow" data-slideshow="4896x3264">
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/story_1.jpg')%>" alt="" />
         </div>
-        <button class="slideshow__next" data-control>Next</button>
-        <p>
-          Jemand findet keinen Parkplatz<br />
-          Hat nicht mehr viel Zeit, es ist bereits 11 Uhr.<br />
-          Jemand ruft aus dem Fenster<br />
-          Das es vorne in der Ecke beim Baum noch einen Parkplatz hat. <br />
-          Dort können sie das Fahrrad nehmen um ans Ziel zu gelangen.<br />
-          In der Kurve fällt das Portemonnaie hinaus in den Busch<br />
-          Der reklamierende geht aus seiner Wohnung raus<br />
-          Er steigt auf seine Vespa<br />
-          Er parkiert die Vespa in einem Parkverbot<br />
-          Er rennt die Treppe hinauf<br />
-          Er sieht das Fahrrad<br />
-          und übergibt das Portemonnaie<br />
-        </p>
+        <button class="slideshow__control slideshow__control--prev" data-prev title="Letztes Bild"></button>
+        <button class="slideshow__control slideshow__control--next" data-next title="Nächstes Bild"></button>
+        <span class="slideshow__text" data-slide="1256x609">Jemand findet keinen Parkplatz</span>
+        <span class="slideshow__text" data-slide="2143x599">Hat nicht mehr viel Zeit, es ist bereits 11 Uhr.</span>
+        <span class="slideshow__text" data-slide="2837x600">Jemand ruft aus dem Fenster</span>
+        <span class="slideshow__text" data-slide="3645x612">Das es vorne in der Ecke beim Baum noch einen Parkplatz hat. </span>
+        <span class="slideshow__text" data-slide="1241x1587">Dort können sie das Fahrrad nehmen um ans Ziel zu gelangen.</span>
+        <span class="slideshow__text" data-slide="2047x1589">In der Kurve fällt das Portemonnaie hinaus in den Busch</span>
+        <span class="slideshow__text" data-slide="2849x1593">Der reklamierende geht aus seiner Wohnung raus</span>
+        <span class="slideshow__text" data-slide="3636x1588">Er steigt auf seine Vespa</span>
+        <span class="slideshow__text" data-slide="1263x2580">Er parkiert die Vespa in einem Parkverbot</span>
+        <span class="slideshow__text" data-slide="2058x2593">Er rennt die Treppe hinauf</span>
+        <span class="slideshow__text" data-slide="2873x2600">Er sieht das Fahrrad</span>
+        <span class="slideshow__text" data-slide="3657x2595">und übergibt das Portemonnaie</span>
       </div>
 
       <h3>Story 2:</h3>
-      <div data-slideshow>
+      <div class="slideshow" data-slideshow="4896x3264">
         <div class="slideshow__image" data-canvas>
           <img data-image src="<%=require('./images/story_2.jpg')%>" alt="" />
         </div>
-        <button class="slideshow__next" data-control>Next</button>
+        <button class="slideshow__control slideshow__control--prev" data-prev title="Letztes Bild"></button>
+        <button class="slideshow__control slideshow__control--next" data-next title="Nächstes Bild"></button>
         <p>
-          Die Särge werden angeliefert<br />
-          Diese sind aber zu spät<br />
-          Der UPS-Man geht zum Lift<br />
-          und fährt in den 4. Stock<br />
-          Dort rennt er<br />
-          richtung Notausgang<br />
-          Läuft durch die Hintertür<br />
-          Als er die zweite Tür öffnen möchte<br />
-          gibt es eine grosse Explosion<br />
-          Das ganze Haus stürzt zusammen<br />
-          Nicht einmal die vier Hauptsäulen halten stand.<br />
-          Der UPS Man kam mit einer verlorener Hand davon und trägt jetzt eine Protese.<br />
-          Ein paar Jahre später Kam er aber nicht damit klar und hat sich dann erhängt.<br />
-          Die Moral der Geschicht, öffne die falsche Türe nicht. #rhymes
+          <span class="slideshow__text" data-slide="867x627">Die Särge werden angeliefert</span>
+          <span class="slideshow__text" data-slide="1587x630">Diese sind aber zu spät</span>
+          <span class="slideshow__text" data-slide="2325x623">Der UPS-Man geht zum Lift</span>
+          <span class="slideshow__text" data-slide="3060x622">und fährt in den 4. Stock</span>
+          <span class="slideshow__text" data-slide="3809x617">Dort rennt er</span>
+          <span class="slideshow__text" data-slide="800x1622">richtung Notausgang</span>
+          <span class="slideshow__text" data-slide="1612x1617">Läuft durch die Hintertür</span>
+          <span class="slideshow__text" data-slide="2349x1603">Als er die zweite Tür öffnen möchte</span>
+          <span class="slideshow__text" data-slide="3088x1591">gibt es eine grosse Explosion</span>
+          <span class="slideshow__text" data-slide="3837x1577">Das ganze Haus stürzt zusammen</span>
+          <span class="slideshow__text" data-slide="807x2602">Nicht einmal die vier Hauptsäulen halten stand.</span>
+          <span class="slideshow__text" data-slide="1625x2611">Der UPS Man kam mit einer verlorener Hand davon und trägt jetzt eine Protese.</span>
+          <span class="slideshow__text" data-slide="2382x2588">Ein paar Jahre später Kam er aber nicht damit klar und hat sich dann erhängt.</span>
+          <span class="slideshow__text" data-slide="3118x2583">Die Moral der Geschicht, öffne die falsche Türe nicht. #rhymes</span>
         </p>
       </div>
     </article>

@@ -1,11 +1,11 @@
 .slideshow {
   position: relative;
+  overflow: hidden;
 }
 
 .slideshow__image {
   position: relative;
   overflow: hidden;
-  border: 2px solid black;
 
   img {
     display: block;
@@ -14,33 +14,62 @@
 
   // Mask
   &::before {
-    content: '';
+    content: "";
     position: absolute;
 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: 4px solid $black;
   }
 }
 
-.slideshow__next {
+.slideshow__control {
+  $height: 2rem;
+
+  width: 3rem;
+  height: $height;
+  margin-top: -($height / 2);
+
   position: absolute;
-  right: 0;
   top: 50%;
   z-index: 10;
 
   cursor: pointer;
 
   border: none;
-  background: $shakespeare url("../images/arrow.svg") center / 1rem no-repeat;
-  width: 3rem;
-  height: 2rem;
+  background: $shakespeare url("../images/arrow-right.svg") center / 1.25rem
+    no-repeat;
+
+  transition: 0.3s ease;
+  transition-property: opacity, visibility, transform;
+
+  transform: translate(0);
+
+  &[hidden] {
+    display: block;
+  }
+
+  &:hover {
+    background-color: lighten($shakespeare, 5%);
+  }
 }
 
-.slideshow__text-wrapper {
-  
+.slideshow__control--prev {
+  left: 0;
+  background-image: url("../images/arrow-left.svg");
+
+  &[hidden] {
+    transform: translate(-100%);
+  }
+}
+
+.slideshow__control--next {
+  right: 0;
+
+  &[hidden] {
+    transform: translate(100%);
+  }
 }
 
 .slideshow__text {
@@ -49,7 +78,7 @@
   left: 0;
   right: 0;
 
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
 
   font-size: $font-size-small;
   color: $white;
@@ -58,7 +87,7 @@
   opacity: 0;
   visibility: hidden;
 
-  transition: .3s ease;
+  transition: 0.3s ease;
   transition-property: opacity, visibility;
 
   &[data-active="true"] {
