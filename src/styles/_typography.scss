@@ -45,10 +45,21 @@ h4 {
   margin-bottom: 0.5em;
 }
 
+%h4-font-style {
+  font-family: $font-family-general;
+  font-size: 1em;
+  text-transform: none;
+  margin-bottom: 0.5em;
+}
+
 h2 {
   @extend %h2-font-style;
 }
 
 h3 {
   @extend %h3-font-style;
+}
+
+h4 {
+  @extend %h4-font-style;
 }
