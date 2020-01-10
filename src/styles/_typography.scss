@@ -22,6 +22,7 @@ h4 {
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   text-transform: uppercase;
+  letter-spacing: 0.029em;
 }
 
 %h1-font-style {
@@ -49,6 +50,7 @@ h4 {
   font-family: $font-family-general;
   font-size: 1em;
   text-transform: none;
+  letter-spacing: normal;
   margin-bottom: 0.5em;
 }
 
